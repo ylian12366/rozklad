@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад Уроків</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <p>Школа імені Владики Софрона Дмитерка</p>
+        <h2 class="h2">Контакти</h2>
+        <h1>Розклад Уроків</h1>
+            <div class="contact"><b> Місто Івано-Франківськ <br/> контакти 0686891215,0674359034,<br/>
+                068363452 </b></div>
+        <div class="form">            <label for="time">Час:</label>
+            <input type="text" id="time" placeholder="Наприклад, 08:00 - 09:30">
+            <label for="subject">Предмет:</label>
+            <input type="text" id="subject" placeholder="Наприклад, Математика">
+            <label for="time">День тижня:</label>
+            <input type="text" id="week" placeholder="Наприклад, Понеділок">
+            <label for="work">Домашнє завдання:</label>
+            <input type="text" id="work" placeholder="Наприклад, Вправа 344">
+            <label for="name">Назви вчителів:</label>
+            <input type="text" id="name" placeholder="Наприклад, П.Юля">
+
+
+            <button onclick="addLesson()">Додати урок</button>
+        </div>
+
+        <table id="schedule">
+            <thead>
+                <tr>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>День тижня</th>
+                    <th>Домашня робота</th>
+                    <th>Назви вчителів</th>
+                    <th>Дія</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
